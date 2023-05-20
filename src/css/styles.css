@@ -16,6 +16,7 @@
     box-sizing: border-box;
     
 } 
+  
 
 body {
     background-color: #ff90e8;
@@ -97,7 +98,7 @@ a.nav-cont:hover::after {
 
 /* ----social media ---- */
 .social-media {
-    width: 100%;
+    width: 80%;
     height: 70px;
     padding-left: 1rem;
     border: 1px solid black;
@@ -116,7 +117,7 @@ a.nav-cont:hover::after {
 }
 
 .sm-header {
-    font-size: 1rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
     cursor: pointer;
     pointer-events: auto;   
@@ -131,6 +132,7 @@ a.nav-cont:hover::after {
     transform-origin: left;
     transition: transform 0.5s;
 }
+
 
 .nav:hover .line {
     transform: scaleX(1);
@@ -158,6 +160,7 @@ a.nav-cont:hover::after {
 .nav:hover .nav-item {
     opacity: 1;
     transform: translateY(0);
+    margin-left: 15px;
 }
 
 .nav-link i {
@@ -174,7 +177,6 @@ a.nav-cont:hover::after {
 }
 
 .section-container {
-    border-right: 2px solid black;
     background-color: var(--color-orange3);
 }
 
@@ -212,7 +214,7 @@ a.nav-cont:hover::after {
 }
 
 #skincare-color {
-    width: 65%;
+    width: 60%;
     border-radius: 20px;
     box-shadow: 8px 8px 0px 4px #000000;
     transform: rotate(5deg);
@@ -221,7 +223,7 @@ a.nav-cont:hover::after {
 }
 
 #skincare-color2 {
-    width: 63%;
+    width: 60%;
     border-radius: 20px;
     box-shadow: 8px 8px 0px 4px #000000;
     transform: rotate(5deg);
@@ -516,74 +518,186 @@ h2 {
 }
 
 
-
-/* ---------------- page PRODUCTS ----------- */
-
-.products-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.swiper {
-    width: 40vw;
-    padding: 3rem !important;
-}
-
-.swiper-slide {
-    background-color: #ffffff;
-    width: 60% !important;
-    height: 60% !important;
-}
-
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height:  100%;
-    object-fit: cover;
-}
-
-.swiper button {
-    width: 50px;
-    height: 50px;
-    color: var(--color-white);
-    background: transparent;
-    border: none;
-    outline: none;
-    transition: opacity 0.25s;
-}
-
-.swiper button:hover {
-    opacity: 0.8;
-}
-
-.swiper button::before, .swiper button::after {
-    font-size: 24px;
-}
-
-.swiper-button-prev {
-    left: 25px;
-}
-
-.swiper-button-next {
-    right: 25px;
-}
-
-.swiper-pagination-bullet {
-    background-color: #ffffff;
-}
-
-
-
-
-
-
-
 /* ----------------------------------------- */
 /* ---------------- MEDIA QUERIES ---------- */
 
-/* -------------- mobile ------------------- */
 
-@media screen and (min-width: 468px) {
+
+@media screen and (max-width: 574px) {
+
+    .container {
+        /* max-width: 570px; */
+        width: 100%;
+    }
+
+    .logo {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    a {
+        margin: 0;
+    }
+   
+    .nav-container {
+        font-size: 1em; 
+        width: 40%;
+    }
+
+    .social-media {
+        padding: 0;
+        width: 100%;
+    }
+
+    .sm-header {
+        width: 160%;
+        font-size: 12px ;
+        margin-left: 5px;
+    }
+
+    .line {
+        width: 55px ; 
+        height: 2px;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .section1 {
+        margin-bottom: 3.5em;
+    }
+
+    .section1 h1 {
+        font-size: 3em;
+    }
+
+    .section1 h2 {
+        font-size: 1.8em;
+        margin-right: 2em;
+    }
+
+    .section1 p {
+        font-size: 1.6em;
+    }
+
+    .aside-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #skincare-color, #skincare-color2 {
+        width: 25%;
+        height: 25%;
+        margin-left: 5em;
+        margin-right: 1.5em;
+        margin-bottom: 1.5em;
+    }
+
+    .footer .container {
+        display: flex;
+        flex-direction: column;
+        padding: 2.5em; 
+    }
+
+    .copyright {
+        padding: 0;
+    }
+}
+
+
+/* --------------------------------- */
+
+@media (min-width: 575px) {
+
+    .container {
+        /* max-width: 570px; */
+        width: 100%;
+    }
+
+    .logo {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    a {
+        margin: 0;
+    }
+   
+    .nav-container {
+        font-size: 1em; 
+        width: 40%;
+    }
+
+    .social-media {
+        padding: 0;
+        width: 100%;
+    }
+
+    .sm-header {
+        width: 160%;
+        font-size: 12px ;
+        margin-left: 5px;
+    }
+
+    .line {
+        width: 55px ; 
+        height: 2px;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section1 {
+        margin-bottom: 3.5em;
+    }
+
+    .section1 h1 {
+        font-size: 3em;
+    }
+
+    .section1 h2 {
+        font-size: 1.8em;
+        margin-right: 2em;
+    }
+
+    .section1 p {
+        font-size: 1.6em;
+    }
+
+    .aside-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #skincare-color, #skincare-color2 {
+        width: 25%;
+        height: 25%;
+        margin-left: 5em;
+        margin-right: 1.5em;
+        margin-bottom: 1.5em;
+    }
+
+    .footer .container {
+        display: flex;
+        flex-direction: column;
+        padding: 2.5em; 
+    }
+    
+    .footer-subscription h4 {
+        font-size: 1.2em;
+    }
+
+    .copyright {
+        padding: 0;
+    }
+
 
 
 
@@ -591,18 +705,96 @@ h2 {
 
 
 
+/* -------------------------------- */
 
-/* --------------- tablet ------------------ */
+@media (min-width: 768px) {
+    .container {
+        width: 100%;
+    }
 
-@media screen and (min-width: 768px) {
+    .logo {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
 
+    a {
+        margin: 0;
+    }
+   
+    .nav-container {
+        font-size: 1.3em; 
+        width: 40%;
+    }
 
-}
+    .social-media {
+        padding: 0;
+        width: 100%;
+    }
 
+    .sm-header {
+        width: 160%;
+        font-size: 1em ;
+        margin-left: 5px;
+        
+    }
 
+    .line {
+        width: 55px ; 
+        height: 2px;
+    }
 
-/* ---------------- desktop ---------------- */
+    .main-container {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+        
+    .section-container {
+        border-right: 2px solid black;
+    }
 
-@media screen and (min-width: 1024px) {
+    .section1 {
+        margin-bottom: 3.5em;
+    }
+
+    .section1 h1 {
+        font-size: 3em;
+    }
+
+    .section1 h2 {
+        font-size: 1.8em;
+        margin-right: 2em;
+    }
+
+    .section1 p {
+        font-size: 1.6em;
+    }
+
+    .aside-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #skincare-color, #skincare-color2 {
+        width: 60%;
+        height: 60%;
+        margin-left: 3em;
+        margin-bottom: 2em;
+        
+    }
+
+    .footer .container {
+        display: flex;
+        flex-direction: column;
+        padding: 2em; 
+    }
+
+    .footer-subscription h4 {
+        font-size: 1.3em;
+    }
+
+    .copyright {
+        padding: 0;
+    }
 
 }

@@ -8,21 +8,195 @@
     <script src="https://kit.fontawesome.com/8b46677b97.js" crossorigin="anonymous"></script>
     <link href="../src/css/styles.css" rel="stylesheet">
     <link rel="icon" type="image/png" size="16x16" href="../assets/img/favicon-16x16.png">
-    <link rel="icon" type="image/png" size="32x32" href="../assets/img/favicon-32x32.png">     
+    <link rel="icon" type="image/png" size="32x32" href="../assets/img/favicon-32x32.png"> 
+    <style>
+
+        @media screen and (max-width: 574px) {
+
+            .container {
+                width: 100%;
+            }
+
+            .logo {
+                width: 90%;
+                height: auto;
+                margin: 0;
+                padding-left: 1rem;   
+            }
+
+            a {
+                margin: 0;
+            }
+
+            .nav-container {
+                font-size: 1em; 
+                width: 40%;
+            }
+
+            .social-media {
+                padding: 0;
+                width: 100%;
+            }
+
+            .sm-header {
+                width: 160%;
+                font-size: 12px ;
+                margin-left: 5px;
+            }
+
+            .line {
+                width: 55px ; 
+                height: 2px;
+            }
+
+            .h2-skincare-container {
+                display: flex;
+                flex-direction: column;
+                font-size: .7em;
+            }
+
+            .h3-skincare {
+                font-size: 2em;
+            }
+
+            .skincare-div {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .card {
+                width: 80%
+            }
+
+            .footer .container {
+                display: flex;
+                flex-direction: column;
+                padding: 2.5em;  
+            }
+
+            .footer-subscription {
+                margin-right: 2em;
+            }
+
+            .copyright {
+                padding: 0;
+                margin-right: 2em;
+            }
+        }
+
+            @media (min-width: 575px) {
+
+            .container {
+                width: 100%;
+            }
+
+            .logo {
+                width: 90%;
+                height: auto;
+                margin: 0;
+                padding-left: 20px;
+            }
+
+            a {
+                margin: 0;
+            }
+
+            .nav-container {
+                font-size: 1em; 
+                width: 40%;
+            }
+
+            .social-media {
+                padding: 0;
+                width: 100%;
+            }
+
+            .sm-header {
+                width: 160%;
+                font-size: 12px;
+                margin-left: 5px;
+            }
+
+            .line {
+                width: 55px ; 
+                height: 2px;
+            }
+
+            .h2-skincare-container {
+                display: flex;
+                flex-direction: column;
+                font-size: .7em;
+            }
+
+            .h3-skincare {
+                font-size: 2em;
+            }
+
+            .skincare-div {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .card {
+                width: 80%;
+            }
+            
+            .footer .container {
+                display: flex;
+                flex-direction: column;
+                padding: 2.5em; 
+            }
+
+            .footer-subscription {
+                margin-right: 2em;
+            }
+
+            .copyright {
+                padding: 0;
+            }
+        }
+
+            @media (min-width: 768px) {
+                
+                .h3-skincare {
+                    font-size: 2.3em;
+                }
+                
+                .skincare-div {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    margin-right: 40px;
+                }
+
+                .footer .container {
+                    display: grid;
+                    grid-template-columns: 2fr 1fr;
+                }
+            }
+
+            @media (min-width: 992px) {
+
+                .footer .container {
+                    display: grid;
+                    grid-template-columns: 2fr 2fr;
+                }
+            }
+
+    </style>    
 </head>
 <body>
-    <!---------- HEADER ----------->
+   
     <header class="header">
-        <!------ LOGO ---->
+        
         <div class="container">
             <a href="../index.html">
                 <img src="../assets/img/hs-logo.svg"  alt="happy skin" class="logo">
             </a>
         </div>
-        <!------ NAVBAR --->
+        
         <div class="navbar-container">
             <div class="nav-container">              
-                <a href="#" class="nav-cont">Routines</a>            
+                <a href="../pages/skincare.html" class="nav-cont">Routines</a>            
             </div>           
             <div class="social-media">
                 <nav class="nav">
@@ -42,20 +216,15 @@
                 </nav>
             </div>
         </div>
-       <!--  <button class="nav-open-btn btn:hover" aria-label="open menu" data-nav-toggler>
-            <span class="line line-1"></span>
-            <span class="line line-2"></span>
-            <span class="line line-3"></span>
-        </button> -->
     </header>
     
     <main>
+
         <div class="h2-skincare-container">
             <h2>Skincare</h2>
         </div>
 
         <h3 class="h3-skincare">Routines for each skin type</h3>
-
 
         <div class="skincare-div">
             <div>
@@ -100,23 +269,10 @@
             </div>
     
         </div>
-
-
-
-
     </main>
 
 
 
-
-
-
-
-
-
-
-
-     <!-----------FOOTER -------------->
      <footer class="footer">
         <div class="container">
             <div class="footer-subscription">
