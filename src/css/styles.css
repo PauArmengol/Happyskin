@@ -14,10 +14,8 @@
 
 * {
     box-sizing: border-box;
-    
 } 
   
-
 body {
     background-color: #ff90e8;
     font-family: "Mabry Pro", sans-serif;
@@ -34,7 +32,6 @@ body {
     background-color: var(--color-white);
     border-top: 2px solid black; 
     border-bottom: 2px solid black;
-    
 }
 
 .logo {
@@ -50,12 +47,6 @@ body {
     align-items: center;
     border-bottom: 2px solid black;
     height: 70px;   
-}
-
-.nav-container {
-    font-family: "Mabry Pro", sans-serif;
-    font-size: 1.2em;
-    width: 180%;
 }
 
 a {
@@ -74,8 +65,6 @@ a.nav-cont {
     text-decoration: none;
     position: relative;
     margin-left: 2rem;
-    
-    
 }
 
 a.nav-cont::after {
@@ -95,12 +84,9 @@ a.nav-cont:hover::after {
     transform: scaleX(1);
 }
 
-
-
 .icons {
 	display: flex;
 	column-gap: 35px;
-
 }
 
 .icon {
@@ -156,7 +142,6 @@ a.nav-cont:hover::after {
 }
 
 
-
 @keyframes shake {
 	10% {
 		transform: rotate(15deg);
@@ -171,8 +156,6 @@ a.nav-cont:hover::after {
 		transform: rotate(-15deg);
 	}
 }
-
-
 
 
 /* ----------------------- MAIN ------------------------------------------ */
@@ -212,7 +195,6 @@ a.nav-cont:hover::after {
 
 .fa-arrow-right {
     margin-top: 10px;
-    
 }
 
 .aside-container {
@@ -259,13 +241,11 @@ h2 {
 /* ---------------------- FOOTER ----------------------- */
 
 .footer .container {
-    display: grid !important;
-    grid-template-columns: 3fr 3fr !important;
+    display: grid;
+    grid-template-columns: 3fr 3fr;
     background-color: var(--color-black);
-    padding-left: 2rem !important;
+    padding-left: 2rem;
 }
-
-
 
 .footer-subscription h4 {
     font-size: 1.7em;
@@ -273,7 +253,6 @@ h2 {
     text-align: justify;
 }
 
-/* --FORM-- */
 .newsletter-grid {
     display: grid;
     grid-auto-columns: 1fr 1fr; 
@@ -507,14 +486,13 @@ h2 {
 
 
 /* ----------------------------------------- */
-/* ---------------- MEDIA QUERIES ---------- */
+/* ----------- MEDIA QUERIES ---------- */
 
 
 
 @media screen and (max-width: 574px) {
 
     .container {
-        /* max-width: 570px; */
         width: 100%;
     }
 
@@ -528,27 +506,6 @@ h2 {
         margin: 0;
     }
    
-    .nav-container {
-        font-size: 1em; 
-        width: 40%;
-    }
-
-    .social-media {
-        padding: 0;
-        width: 100%;
-    }
-
-    .sm-header {
-        width: 160%;
-        font-size: 12px ;
-        margin-left: 5px;
-    }
-
-    .line {
-        width: 55px ; 
-        height: 2px;
-    }
-
     .main-container {
         display: flex;
         flex-direction: column;
@@ -578,9 +535,9 @@ h2 {
     }
 
     #skincare-color, #skincare-color2 {
-        width: 25%;
-        height: 25%;
-        margin-left: 5em;
+        width: 20%;
+        height: 20%;
+        margin-left: 6em;
         margin-right: 1.5em;
         margin-bottom: 1.5em;
     }
@@ -588,7 +545,11 @@ h2 {
     .footer .container {
         display: flex;
         flex-direction: column;
-        padding: 2.5em; 
+        padding-right: 3em;
+    }
+
+    .icons_footer {
+        padding-bottom: 10px;
     }
 
     .copyright {
@@ -602,7 +563,6 @@ h2 {
 @media (min-width: 575px) {
 
     .container {
-        /* max-width: 570px; */
         width: 100%;
     }
 
@@ -616,27 +576,6 @@ h2 {
         margin: 0;
     }
    
-    .nav-container {
-        font-size: 1em; 
-        width: 40%;
-    }
-
-    .social-media {
-        padding: 0;
-        width: 100%;
-    }
-
-    .sm-header {
-        width: 160%;
-        font-size: 12px ;
-        margin-left: 5px;
-    }
-
-    .line {
-        width: 55px ; 
-        height: 2px;
-    }
-
     .main-container {
         display: flex;
         flex-direction: column;
@@ -665,9 +604,9 @@ h2 {
     }
 
     #skincare-color, #skincare-color2 {
-        width: 25%;
-        height: 25%;
-        margin-left: 5em;
+        width: 20%;
+        height: 20%;
+        margin-left: 6em;
         margin-right: 1.5em;
         margin-bottom: 1.5em;
     }
@@ -686,16 +625,12 @@ h2 {
         padding: 0;
     }
 
-
-
-
 }
-
 
 
 /* -------------------------------- */
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px){
     .container {
         width: 100%;
     }
@@ -710,28 +645,6 @@ h2 {
         margin: 0;
     }
    
-    .nav-container {
-        font-size: 1.3em; 
-        width: 40%;
-    }
-
-    .social-media {
-        padding: 0;
-        width: 100%;
-    }
-
-    .sm-header {
-        width: 160%;
-        font-size: 1em ;
-        margin-left: 5px;
-        
-    }
-
-    .line {
-        width: 55px ; 
-        height: 2px;
-    }
-
     .main-container {
         display: grid;
         grid-template-columns: 3fr 1fr;
@@ -767,8 +680,7 @@ h2 {
         width: 60%;
         height: 60%;
         margin-left: 3em;
-        margin-bottom: 2em;
-        
+        margin-bottom: 2em;    
     }
 
     .footer .container {
@@ -783,6 +695,17 @@ h2 {
 
     .copyright {
         padding: 0;
+    }
+
+}
+
+/* --------------------------------------- */
+
+@media (min-width: 992px) {
+
+    .footer .container {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
     }
 
 }
